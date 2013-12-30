@@ -271,6 +271,20 @@ PRODUCT_COPY_FILES += \
     device/asus/flo/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     device/asus/flo/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
 
+# Motox dalvik patch
+# Bin
+PRODUCT_COPY_FILES += \
+        device/asus/flo/proprietary/system/bin/dalvikvm:system/bin/dalvikvm \
+        device/asus/flo/proprietary/system/bin/dexopt:system/bin/dexopt
+
+# Lib
+PRODUCT_COPY_FILES += \
+        device/asus/flo/proprietary/system/lib/libc.so:system/lib/libc.so \
+        device/asus/flo/proprietary/system/lib/libcutils.so:system/lib/libcutils.so \
+        device/asus/flo/proprietary/system/lib/libdvm.so:system/lib/libdvm.so \
+        device/asus/flo/proprietary/system/lib/libm.so:system/lib/libm.so \
+        device/asus/flo/proprietary/system/lib/libqc-opt.so:system/lib/libqc-opt.so
+
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc-nci \
