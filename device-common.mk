@@ -264,6 +264,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.hwui.text_large_cache_width=2048 \
 	ro.hwui.text_large_cache_height=1024
 
+# SU Support
+PRODUCT_COPY_FILES += \
+    device/asus/flo/prebuilt/bin/su:system/xbin/daemonsu \
+    device/asus/flo/prebuilt/bin/su:system/xbin/su \
+    device/asus/flo/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    device/asus/flo/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
+
 # NFC packages
 PRODUCT_PACKAGES += \
     libnfc-nci \
