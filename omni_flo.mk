@@ -32,10 +32,10 @@ PRODUCT_MANUFACTURER := ASUS
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Kernel inline build
-TARGET_KERNEL_SOURCE := kernel/asus/flar2-flo
-TARGET_KERNEL_CONFIG := bulletproof_defconfig 
-TARGET_VARIANT_CONFIG := bulletproof_defconfig
-TARGET_SELINUX_CONFIG := bulletproof_defconfig
+TARGET_KERNEL_SOURCE := kernel/asus/flar2
+TARGET_KERNEL_CONFIG := elementalx_defconfig 
+TARGET_VARIANT_CONFIG := elementalx_defconfig
+TARGET_SELINUX_CONFIG := elementalx_defconfig
 # Old Kernel inline build info
 #TARGET_KERNEL_SOURCE := kernel/asus/flo
 #TARGET_KERNEL_CONFIG := flo_defconfig 
